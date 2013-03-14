@@ -1,0 +1,1518 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class SalamCastGen</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> SalamCastGen</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">SalamCastGen - Podcast Generator class</p>
+<p class="description"><p>SalamCastGen and SalamCastGenItem are a fork of [Universal FeedWriter and FeedItem](<a href="http://www.phpclasses.org/package/4427-PHP-Generate-feeds-in-RSS-1-0-2-0-an-Atom-formats.html">http://www.phpclasses.org/package/4427-PHP-Generate-feeds-in-RSS-1-0-2-0-an-Atom-formats.html</a>),  by Anis uddin Ahmad &lt;anisniit@gmail.com&gt;.  Generates an RSS2.0 Feed with a mix of ATOM xmlns and built-in support for  iTunes Podcast xmlns; other XML Name spaces can be added, but you will need to manually add the elements your self with  the proper xmlns prefix. <ul><li>This feed generator has been targeted at iTunes, XMBC, iPhoto, any podcast (RSS 2.0) player/downloader</li><li>Not all tags are supported by all RSS readers, but they can be used for any clients you choose to create to comsume them</li></ul></p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Karl Holz &lt;<a href="mailto:newaeon@mac.com">newaeon@mac.com</a>&gt;</li>
+				<li><span class="field">version:</span> 1.0</li>
+				<li><span class="field">copyright:</span> Copyright (c) Apr 4, 2012, Karl Holz</li>
+				<li><span class="field">license:</span> <a href="http://opensource.org/licenses/GPL-2.0">http://opensource.org/licenses/GPL-2.0</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_salamcast.class.php.html">/salamcast.class.php</a> (line <span class="field">18</span>)
+		</p>
+		
+				
+		<pre><a href="../SalamFeedCommon/SalamFeedCommon.html">SalamFeedCommon</a>
+   |
+   --SalamCastGen</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																								<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$CDATAEncoding" title="details" class="var-name">$CDATAEncoding</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$channels" title="details" class="var-name">$channels</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$feed" title="details" class="var-name">$feed</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$header" title="details" class="var-name">$header</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">array</span>
+					<a href="#$items" title="details" class="var-name">$items</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">string</span>
+					<a href="#$tmpl" title="details" class="var-name">$tmpl</a>
+				</div>
+																<div class="var-title">
+					<img src="../media/images/Variable.png" alt=" " />
+					<span class="var-type">$xmlns</span>
+					<a href="#$xmlns" title="details" class="var-name">$xmlns</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																<div class="method-definition">
+					<img src="../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$tmpl</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$prefix</span> = <span class="var-default">__CLASS__</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#addItem" title="details" class="method-name">addItem</a>
+											(<span class="var-type">object instance</span>&nbsp;<span class="var-name">$feedItem</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#add_copyright" title="details" class="method-name">add_copyright</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$c</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#add_itunes" title="details" class="method-name">add_itunes</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#add_lang" title="details" class="method-name">add_lang</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$l</span> = <span class="var-default">'en-us'</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#add_opt_rss2" title="details" class="method-name">add_opt_rss2</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#add_rss1_ns" title="details" class="method-name">add_rss1_ns</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#apply_tmpl" title="details" class="method-name">apply_tmpl</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#Channels" title="details" class="method-name">Channels</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#cloud" title="details" class="method-name">cloud</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$d</span>, [<span class="var-type">interger</span>&nbsp;<span class="var-name">$port</span> = <span class="var-default">&quot;80&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span> = <span class="var-default">&quot;/&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$func</span> = <span class="var-default">&quot;&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$protocl</span> = <span class="var-default">&quot;http-post&quot;</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#complete" title="details" class="method-name">complete</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$c</span> = <span class="var-default">'no'</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">object instance</span>
+										<a href="#createNewItem" title="details" class="method-name">createNewItem</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#docs" title="details" class="method-name">docs</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$u</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#endItem" title="details" class="method-name">endItem</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#errorFeed" title="details" class="method-name">errorFeed</a>
+											([<span class="var-type">interger</span>&nbsp;<span class="var-name">$code</span> = <span class="var-default">'404'</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#genarateFeed" title="details" class="method-name">genarateFeed</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#getNewFeed" title="details" class="method-name">getNewFeed</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#Head" title="details" class="method-name">Head</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#Items" title="details" class="method-name">Items</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#lastBuildDate" title="details" class="method-name">lastBuildDate</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$d</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#managingEditor" title="details" class="method-name">managingEditor</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$e</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#new_feed_url" title="details" class="method-name">new_feed_url</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$u</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#setChannelElement" title="details" class="method-name">setChannelElement</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$elementName</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$content</span>)
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">boolean</span>
+										<a href="#setOwner" title="details" class="method-name">setOwner</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$n</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$e</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#setXMLNS" title="details" class="method-name">setXMLNS</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$x</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$u</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#startItem" title="details" class="method-name">startItem</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#Tail" title="details" class="method-name">Tail</a>
+										()
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#textInput" title="details" class="method-name">textInput</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$t</span> = <span class="var-default">'submit'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$d</span> = <span class="var-default">'SalamCastGen'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$n</span> = <span class="var-default">'textbox'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$u</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">bool</span>
+										<a href="#ttl" title="details" class="method-name">ttl</a>
+											([<span class="var-type">interger</span>&nbsp;<span class="var-name">$t</span> = <span class="var-default">60</span>])
+									</div>
+																<div class="method-definition">
+					<img src="../media/images/Method.png" alt=" "/>
+											<span class="method-result">string</span>
+										<a href="#xsl_out" title="details" class="method-name">xsl_out</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$xsltmpl</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$xml_load</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$CDATAEncoding" id="$CDATAEncoding"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$CDATAEncoding</span>
+			 = <span class="var-default">array (				<br />			'description',<br />			'content:encoded',<br />			'atom:content',<br />			'itunes:summary' <br />		)</span>			(line <span class="line-number">44</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">CDATA encoding</p>
+<p class="description"><p>The tag names which have to encoded as CDATA</p></p>
+	<ul class="tags">
+				<li><span class="field">var:</span> XML element data that will be encoded</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$channels" id="$channels"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$channels</span>
+			 = <span class="var-default">array ()</span>			(line <span class="line-number">27</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> Collection of channel elements</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$feed" id="$feed"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$feed</span>
+						(line <span class="line-number">64</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Feed data</p>
+<p class="description"><p>stores the generated RSS 2.0 XML data</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$header" id="$header"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$header</span>
+			 = <span class="var-default"> 'text/xml'</span>			(line <span class="line-number">23</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Default header</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> RSS feed header, text/xml works with IE ajax</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$items" id="$items"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$items</span>
+			 = <span class="var-default">array ()</span>			(line <span class="line-number">32</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">var:</span> Collection of RSS feed items as object of class.</li>
+				<li><span class="field">see:</span> <a href="../SalamCastGen/SalamCastGen.html#methodcreateNewItem">SalamCastGen::createNewItem()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$tmpl" id="$tmpl"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$tmpl</span>
+			 = <span class="var-default"> NULL</span>			(line <span class="line-number">38</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">XSLT template</p>
+<p class="description"><p>use with RSS feed, don't forget to add the xmlns that you use to your style sheet</p></p>
+	<ul class="tags">
+				<li><span class="field">var:</span> XSLT filename</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$xmlns" id="$xmlns"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">$xmlns</span>
+			<span class="var-name">$xmlns</span>
+			 = <span class="var-default">array (<br />			'atom' =&gt; &quot;http://www.w3.org/2005/Atom&quot; <br />	)</span>			(line <span class="line-number">56</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">xmlns</p>
+<p class="description"><p>ATOM xmlns spec is on by by default</p></p>
+	<ul class="tags">
+				<li><span class="field">var:</span> array custom XML Name Space support</li>
+				<li><span class="field">link:</span> <a href="http://tools.ietf.org/html/rfc4287">http://tools.ietf.org/html/rfc4287</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../SalamFeedCommon/SalamFeedCommon.html">SalamFeedCommon</a></span></p>
+					<blockquote>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#var$category">SalamFeedCommon::$category</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#var$id">SalamFeedCommon::$id</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#var$itunes">SalamFeedCommon::$itunes</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#var$itunes_category">SalamFeedCommon::$itunes_category</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#var$itunes_mime">SalamFeedCommon::$itunes_mime</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#var$lang">SalamFeedCommon::$lang</a></span><br>
+							</span>
+													<img src="../media/images/Variable.png" />
+							<span class="var-title">
+								<span class="var-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#var$mode">SalamFeedCommon::$mode</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">73</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor class  builds an RSS 2.0 feed. Channel elements that are not included are: rating, skipHours, skipDays.</p>
+	<ul class="tags">
+				<li><span class="field">link:</span> <a href="http://www.rssboard.org/rss-2-0">http://www.rssboard.org/rss-2-0</a></li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$tmpl</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$prefix</span> = <span class="var-default">__CLASS__</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$tmpl</span><span class="var-description">: XSLT template file</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$prefix</span><span class="var-description">: prefix of uuid</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddItem" id="addItem"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">addItem</span> (line <span class="line-number">118</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add item  Add a Feed Item to the main class</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SalamCastGen/SalamCastGen.html#methodcreateNewItem">SalamCastGen::createNewItem()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			addItem
+		</span>
+					(<span class="var-type">object instance</span>&nbsp;<span class="var-name">$feedItem</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object instance</span>
+				<span class="var-name">$feedItem</span><span class="var-description">: of class</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_copyright" id="add_copyright"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">add_copyright</span> (line <span class="line-number">179</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Copyright</p>
+<p class="description"><p>RSS 2.0 copyright tag for channel  &lt;copyright&gt; Y N not visible</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SalamCastGen/SalamCastGen.html#methodsetChannelElement">SalamCastGen::setChannelElement()</a></li>
+				<li><span class="field">link:</span> <a href="http://www.rssboard.org/rss-2-0">http://www.rssboard.org/rss-2-0</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			add_copyright
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$c</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$c</span><span class="var-description">: copyright tag</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_itunes" id="add_itunes"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">add_itunes</span> (line <span class="line-number">152</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">add iTunes</p>
+<p class="description"><p>add iTunes Podcast xmlns specs</p></p>
+	<ul class="tags">
+				<li><span class="field">link:</span> <a href="http://www.apple.com/itunes/podcasts/specs.html">http://www.apple.com/itunes/podcasts/specs.html</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			add_itunes
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodadd_lang" id="add_lang"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">add_lang</span> (line <span class="line-number">164</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Language</p>
+<p class="description"><p>RSS 2.0 language tag for channel</p></p>
+	<ul class="tags">
+				<li><span class="field">link:</span> <a href="http://backend.userland.com/stories/storyReader$16">http://backend.userland.com/stories/storyReader$16</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			add_lang
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$l</span> = <span class="var-default">'en-us'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$l</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd_opt_rss2" id="add_opt_rss2"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">add_opt_rss2</span> (line <span class="line-number">129</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">More RSS2 xmlns</p>
+<p class="description"><p>add optional RSS2 NS, I don't use them myself, but you might find them useful</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			add_opt_rss2
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodadd_rss1_ns" id="add_rss1_ns"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">add_rss1_ns</span> (line <span class="line-number">140</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">add opt xmlns</p>
+<p class="description"><p>add RSS 1 (rdf/dc) support into the RSS2/ATOM feed</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			add_rss1_ns
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodapply_tmpl" id="apply_tmpl"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">apply_tmpl</span> (line <span class="line-number">91</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Print with template</p>
+<p class="description"><p>apply xslt template to Feed to print an HTML document</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			apply_tmpl
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodChannels" id="Channels"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">Channels</span> (line <span class="line-number">465</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Make Channel</p>
+<p class="description"><p>Generate RSS 2.0 channels</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			Channels
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcloud" id="cloud"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">cloud</span> (line <span class="line-number">313</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Cloud</p>
+<p class="description"><p>RSS 2.0 cloud tag used in channel</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SalamCastGen/SalamCastGen.html#methodsetChannelElement">SalamCastGen::setChannelElement()</a></li>
+				<li><span class="field">link:</span> <a href="http://www.rssboard.org/rss-2-0#ltcloudgtSubelementOfLtchannelgt">http://www.rssboard.org/rss-2-0#ltcloudgtSubelementOfLtchannelgt</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			cloud
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$d</span>, [<span class="var-type">interger</span>&nbsp;<span class="var-name">$port</span> = <span class="var-default">&quot;80&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$path</span> = <span class="var-default">&quot;/&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$func</span> = <span class="var-default">&quot;&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$protocl</span> = <span class="var-default">&quot;http-post&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$d</span>			</li>
+					<li>
+				<span class="var-type">interger</span>
+				<span class="var-name">$port</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$path</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$func</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$protocl</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcomplete" id="complete"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">complete</span> (line <span class="line-number">213</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">iTunes complete</p>
+<p class="description"><p>iTunes complete tag used in channel  &lt;itunes:complete&gt; Y N indicates completion of podcasts; no more episodes</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SalamCastGen/SalamCastGen.html#methodsetChannelElement">SalamCastGen::setChannelElement()</a></li>
+				<li><span class="field">link:</span> <a href="http://www.apple.com/itunes/podcasts/specs.html#complete">http://www.apple.com/itunes/podcasts/specs.html#complete</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			complete
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$c</span> = <span class="var-default">'no'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$c</span><span class="var-description">: yes or no</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcreateNewItem" id="createNewItem"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">createNewItem</span> (line <span class="line-number">400</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">New Item</p>
+<p class="description"><p>Create a new feed item</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> of FeedItem class</li>
+				<li><span class="field">see:</span> <a href="../SalamCastGenItem/SalamCastGenItem.html#method__construct">SalamCastGenItem::__construct()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object instance</span>
+		<span class="method-name">
+			createNewItem
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddocs" id="docs"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">docs</span> (line <span class="line-number">276</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Docs</p>
+<p class="description"><p>Feed format Documentation RSS 2.0 docs tag in Channel</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SalamCastGen/SalamCastGen.html#methodsetChannelElement">SalamCastGen::setChannelElement()</a></li>
+				<li><span class="field">link:</span> <a href="http://www.rssboard.org/rss-2-0">http://www.rssboard.org/rss-2-0</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			docs
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$u</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$u</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodendItem" id="endItem"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">endItem</span> (line <span class="line-number">526</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">end Item</p>
+<p class="description"><p>Closes RSS 2.0 item tag</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			endItem
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoderrorFeed" id="errorFeed"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">errorFeed</span> (line <span class="line-number">536</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Error Feed</p>
+<p class="description"><p>prints out an error feed in RSS 2.0 format</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			errorFeed
+		</span>
+					([<span class="var-type">interger</span>&nbsp;<span class="var-name">$code</span> = <span class="var-default">'404'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">interger</span>
+				<span class="var-name">$code</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgenarateFeed" id="genarateFeed"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">genarateFeed</span> (line <span class="line-number">412</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Print Feed</p>
+<p class="description"><p>Print the RSS 2.0 feed</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SalamCastGen/SalamCastGen.html#methodgetNewFeed">SalamCastGen::getNewFeed()</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			genarateFeed
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetNewFeed" id="getNewFeed"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">getNewFeed</span> (line <span class="line-number">427</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Make Feed</p>
+<p class="description"><p>Genarate the actual RSS 2.0 content, wont print</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getNewFeed
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodHead" id="Head"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">Head</span> (line <span class="line-number">441</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Open Feed</p>
+<p class="description"><p>Generate the xml and rss namespace</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			Head
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodItems" id="Items"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">Items</span> (line <span class="line-number">500</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Make Items</p>
+<p class="description"><p>Generate formatted feed items</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			Items
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodlastBuildDate" id="lastBuildDate"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">lastBuildDate</span> (line <span class="line-number">263</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Last Build Date  RSS 2.0 lastBuildDate tag in channel for the last time the content of the channel changed.</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SalamCastGen/SalamCastGen.html#methodsetChannelElement">SalamCastGen::setChannelElement()</a></li>
+				<li><span class="field">link:</span> <a href="http://www.rssboard.org/rss-2-0">http://www.rssboard.org/rss-2-0</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			lastBuildDate
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$d</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$d</span><span class="var-description">: dateformat example: Sat, 07 Sep 2002 9:42:31 GMT</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodmanagingEditor" id="managingEditor"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">managingEditor</span> (line <span class="line-number">247</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Managing Editor  Email address for person responsible for editorial content.</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SalamCastGen/SalamCastGen.html#methodsetChannelElement">SalamCastGen::setChannelElement()</a></li>
+				<li><span class="field">link:</span> <a href="http://www.rssboard.org/rss-2-0">http://www.rssboard.org/rss-2-0</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			managingEditor
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$e</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$e</span><span class="var-description">: info[at]example.com (info)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnew_feed_url" id="new_feed_url"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">new_feed_url</span> (line <span class="line-number">231</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">New feed url</p>
+<p class="description"><p>New feed for iTunes  &lt;itunes:new-feed-url&gt; - not visible, used to inform iTunes of new feed, used in channel</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SalamCastGen/SalamCastGen.html#methodsetChannelElement">SalamCastGen::setChannelElement()</a></li>
+				<li><span class="field">link:</span> <a href="http://www.apple.com/itunes/podcasts/specs.html#newfeed">http://www.apple.com/itunes/podcasts/specs.html#newfeed</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			new_feed_url
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$u</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$u</span><span class="var-description">: new feed url</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetChannelElement" id="setChannelElement"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setChannelElement</span> (line <span class="line-number">105</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set channel item</p>
+<p class="description"><p>Set the Channel tag to the channels array</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setChannelElement
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$elementName</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$content</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$elementName</span><span class="var-description">: of the channel tag</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$content</span><span class="var-description">: of the channel tag</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetOwner" id="setOwner"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setOwner</span> (line <span class="line-number">289</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Owner  Owner of feed for channel &lt;itunes:owner&gt; Y N not visible, used for contact only Put the email address of the owner in a nested &lt;itunes:email&gt; element. Put the name of the owner in a nested &lt;itunes:name&gt; element.</p>
+	<ul class="tags">
+				<li><span class="field">link:</span> <a href="http://www.apple.com/itunes/podcasts/specs.html#owner">http://www.apple.com/itunes/podcasts/specs.html#owner</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			setOwner
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$n</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$e</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$n</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$e</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetXMLNS" id="setXMLNS"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">setXMLNS</span> (line <span class="line-number">196</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">set XML ns  add an XML Name Space to Feed output</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			setXMLNS
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$x</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$u</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$x</span><span class="var-description">: xmlns prefix</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$u</span><span class="var-description">: xmlns url</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodstartItem" id="startItem"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">startItem</span> (line <span class="line-number">517</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">open Item</p>
+<p class="description"><p>Open RSS 2.0 item tag</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			startItem
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodTail" id="Tail"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/PrivateMethod.png" />
+		<span class="method-title">Tail</span> (line <span class="line-number">456</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Close Feed</p>
+<p class="description"><p>Closes the open tags at the end of file</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			Tail
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodtextInput" id="textInput"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">textInput</span> (line <span class="line-number">354</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Text Input</p>
+<p class="description"><p>RSS 2.0 textInput tag for channel, won't display in FireFox most readers will ignore it</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SalamCastGen/SalamCastGen.html#methodsetChannelElement">SalamCastGen::setChannelElement()</a></li>
+				<li><span class="field">link:</span> <a href="http://www.rssboard.org/rss-2-0#lttextinputgtSubelementOfLtchannelgt">http://www.rssboard.org/rss-2-0#lttextinputgtSubelementOfLtchannelgt</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			textInput
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$t</span> = <span class="var-default">'submit'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$d</span> = <span class="var-default">'SalamCastGen'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$n</span> = <span class="var-default">'textbox'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$u</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$t</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$d</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$n</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$u</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodttl" id="ttl"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">ttl</span> (line <span class="line-number">335</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Time to Live</p>
+<p class="description"><p>RSS 2.0 ttl (time to live) tag in channel</p></p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../SalamCastGen/SalamCastGen.html#methodsetChannelElement">SalamCastGen::setChannelElement()</a></li>
+				<li><span class="field">link:</span> <a href="http://www.rssboard.org/rss-2-0#ltttlgtSubelementOfLtchannelgt">http://www.rssboard.org/rss-2-0#ltttlgtSubelementOfLtchannelgt</a></li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">bool</span>
+		<span class="method-name">
+			ttl
+		</span>
+					([<span class="var-type">interger</span>&nbsp;<span class="var-name">$t</span> = <span class="var-default">60</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">interger</span>
+				<span class="var-name">$t</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodxsl_out" id="xsl_out"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../media/images/Method.png" />
+		<span class="method-title">xsl_out</span> (line <span class="line-number">370</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">XLST tmpl</p>
+<p class="description"><p>Apply an XSLT style sheet to the RSS 2.0 feed</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> transformed XML data</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			xsl_out
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$xsltmpl</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$xml_load</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$xsltmpl</span><span class="var-description">: XSLT stylesheet to be applied to XML</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$xml_load</span><span class="var-description">: XML data</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../SalamFeedCommon/SalamFeedCommon.html">SalamFeedCommon</a></span></p>
+					<blockquote>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodaddAtomLink">SalamFeedCommon::addAtomLink()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodadd_uuid">SalamFeedCommon::add_uuid()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodblock">SalamFeedCommon::block()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodcategory">SalamFeedCommon::category()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodenable_itunes">SalamFeedCommon::enable_itunes()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodexplicit">SalamFeedCommon::explicit()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodgenerator">SalamFeedCommon::generator()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodkeywords">SalamFeedCommon::keywords()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodmakeNode">SalamFeedCommon::makeNode()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodread_cat">SalamFeedCommon::read_cat()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodrssDate">SalamFeedCommon::rssDate()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodsearch_cat">SalamFeedCommon::search_cat()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodsearch_mime">SalamFeedCommon::search_mime()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodsetAuthor">SalamFeedCommon::setAuthor()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodsetDate">SalamFeedCommon::setDate()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodsetDescription">SalamFeedCommon::setDescription()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodsetImage">SalamFeedCommon::setImage()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodsetLink">SalamFeedCommon::setLink()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodsetSubTitle">SalamFeedCommon::setSubTitle()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodsetTitle">SalamFeedCommon::setTitle()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodthis_host">SalamFeedCommon::this_host()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodthis_uri">SalamFeedCommon::this_uri()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodurl_base">SalamFeedCommon::url_base()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methoduuid">SalamFeedCommon::uuid()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodXMLCdata">SalamFeedCommon::XMLCdata()</a></span><br>
+													<img src="../media/images/Method.png" alt=" "/>
+							<span class="method-name"><a href="../SalamFeedCommon/SalamFeedCommon.html#methodXMLClean">SalamFeedCommon::XMLClean()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Wed, 13 Mar 2013 21:23:32 -0400 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.4</a>
+	</p>
+	</div></body>
+</html>
