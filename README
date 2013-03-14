@@ -1,0 +1,22 @@
+# SalamCastGen - Podcast Generator class
+
+Apr 4, 2012
+
+***
+
+- [GPL 2.0 license](http://opensource.org/licenses/GPL-2.0)
+- [RSS 2.0](http://www.rssboard.org/rss-2-0) 
+- [iTunes podcast spec and documentation](http://www.apple.com/itunes/podcasts/specs.html)
+
+***
+
+SalamCastGen and SalamCastGenItem are a fork of [Universal FeedWriter and FeedItem](http://www.phpclasses.org/package/4427-PHP-Generate-feeds-in-RSS-1-0-2-0-an-Atom-formats.html), by Anis uddin Ahmad <anisniit@gmail.com>.  Generates an RSS2.0 (Channel elements that are not included are: rating, skipHours, skipDays) Feed with a mix of ATOM xmlns and built-in support for iTunes Podcast xmlns; other XML Name spaces can be added, but you will need to manually add the elements your self with the proper xmlns prefix.
+
+### Some features include:
+ - This feed generator has been targeted at iTunes, XMBC, iPhoto, any podcast (RSS 2.0) player/downloader
+ - Not all tags are supported by all RSS readers, but they can be used for any clients you choose to create to comsume them
+ - Support for XSLT templates for applying them to the RSS Feed.
+ - Nothing is printed to the browser until you call $s->genarateFeed();
+ - The feed can be returned as a string and not printed out right away, using $s->getNewFeed()
+ - All common functionality is stored in an abstract class
+ - iTunes podcast category checking
