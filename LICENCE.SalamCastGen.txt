@@ -1,5 +1,6 @@
 SalamCastGen - generates an RSS 2.0 podcast with iTunes support
-Copyright (C) 2012 Karl Holz <newaeon|a|mac[d]com>
+Copyright © 2012 Karl Holz <newaeon|a|mac[d]com>
+Copyright © 2008 Anis uddin Ahmad <anisniit@gmail.com> (Universal Feed Generator)
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
